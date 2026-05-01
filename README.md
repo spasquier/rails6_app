@@ -24,10 +24,6 @@ rails db:migrate
 ```bash
 rails db:seed
 ```
-### Install Webpacker
-```bash
-rails webpacker:install
-```
 
 ### Run Elastic Search
 To run a local Elastic Search instance with Docker:
@@ -46,6 +42,12 @@ To run a local Elastic Search instance with Docker:
 ### Run Redis for Sidekiq Queues
 ```bash
 docker run -d --name redis -p 6379:6379 redis:8.6.2
+```
+## Run the Web App
+
+### Install Webpacker
+```bash
+rails webpacker:install
 ```
 
 ### Run the app in development mode
